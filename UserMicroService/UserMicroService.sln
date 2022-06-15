@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMicroService", "UserMicroService\UserMicroService.csproj", "{28B56936-9C5C-4F05-80A8-BB0F5021CE12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMicroService", "UserMicroService\UserMicroService.csproj", "{28B56936-9C5C-4F05-80A8-BB0F5021CE12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMicroService.EntitiesProvider", "UserMicroService.EntitiesProvider\UserMicroService.EntitiesProvider.csproj", "{D9FE4848-618F-41C8-AB1C-47D5FA3E893D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMicroService.EntitiesProvider", "UserMicroService.EntitiesProvider\UserMicroService.EntitiesProvider.csproj", "{D9FE4848-618F-41C8-AB1C-47D5FA3E893D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMicroService.Bussiness", "UserMicroService.Bussiness\UserMicroService.Bussiness.csproj", "{CBC90469-D52F-48A8-A010-6D02D07C4FFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMicroService.Bussiness", "UserMicroService.Bussiness\UserMicroService.Bussiness.csproj", "{CBC90469-D52F-48A8-A010-6D02D07C4FFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMicroService.DataAccess", "UserMicroService.DataAccess\UserMicroService.DataAccess.csproj", "{00B4EA39-AD3C-4421-A87E-951A922DD83F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMicroService.DataAccess", "UserMicroService.DataAccess\UserMicroService.DataAccess.csproj", "{00B4EA39-AD3C-4421-A87E-951A922DD83F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMicroService.Test", "UserMicroService.Test\UserMicroService.Test.csproj", "{83C507C1-16AD-40ED-B69F-A45C397A5A9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMicroService.Test", "UserMicroService.Test\UserMicroService.Test.csproj", "{83C507C1-16AD-40ED-B69F-A45C397A5A9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

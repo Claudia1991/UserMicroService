@@ -25,6 +25,7 @@ namespace UserMicroService.Controllers
         [HttpGet]
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(ResponseBase),StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseBase),StatusCodes.Status500InternalServerError)]
         public ResponseBase Get()
         {
             var response = _userBussiness.GetAllUsers();
@@ -39,6 +40,8 @@ namespace UserMicroService.Controllers
         [HttpPost]
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(ResponseBase), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseBase), StatusCodes.Status500InternalServerError)]
+
         public ResponseBase Post([FromBody] UserAddRequest request)
         {
             var response = _userBussiness.CreatNewUser(request);
@@ -53,6 +56,8 @@ namespace UserMicroService.Controllers
         [HttpPut]
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(ResponseBase), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseBase), StatusCodes.Status500InternalServerError)]
+
         public ResponseBase Put([FromBody] UserUpdateRequest request)
         {
             var response = _userBussiness.UpdateUser(request);
@@ -67,6 +72,8 @@ namespace UserMicroService.Controllers
         [HttpDelete]
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(ResponseBase), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseBase), StatusCodes.Status500InternalServerError)]
+
         public ResponseBase Delete([FromBody]UserDeleteRequest request)
         {
             var response = _userBussiness.DeleteUser(request);

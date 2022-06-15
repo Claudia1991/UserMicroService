@@ -1,4 +1,6 @@
-﻿namespace UserMicroService.EntitiesProvider.ModelEntities.Response
+﻿using System.Text.Json;
+
+namespace UserMicroService.EntitiesProvider.ModelEntities.Response
 {
     public class ResponseBase
     {
@@ -23,6 +25,11 @@
         public static ResponseBase FromSuccess(string message)
         {
             return new ResponseBase(true, message);
+        }
+
+        public override string ToString()
+        {
+            return JsonSerializer.Serialize(this);
         }
     }
 
